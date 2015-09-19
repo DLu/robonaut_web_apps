@@ -1,0 +1,5 @@
+<launch>
+	<include file="$(find r2_gazebo)/launch/r2_fullbody_gazebo_no_gui.launch">
+		 <arg name="moveit" value="true"/>
+	</include>
+</launch>
