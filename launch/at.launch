@@ -1,0 +1,7 @@
+<launch>
+    <node name="im_proxy" pkg="interactive_marker_proxy" type="proxy">
+        <remap from="topic_ns" to="affordance_template_server"/>
+        <remap from="target_frame" to="world" />
+    </node>
+    <include file="$(find affordance_template_server)/launch/r2.launch"/>
+</launch>
