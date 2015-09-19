@@ -1,0 +1,4 @@
+<launch>
+	<include file="$(find robonaut_web_apps)/launch/webcore.launch"/>
+	<include file="$(find robonaut_web_apps)/launch/interaction.launch"/>
+</launch>
