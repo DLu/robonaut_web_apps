@@ -26,3 +26,4 @@ ln -s ~/Catkin/src/affordance_template_js/demo/r2_at.html
 ln -s ~/Catkin/src/affordance_templates/affordance_template_library
 ln -s ~/Catkin/src/nasa_r2_common/r2_description
 ln -s ~/Catkin/src/affordance_template_js
+ln -s ~/Catkin/src/robonaut_web_apps/html/r2.html
