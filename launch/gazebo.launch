@@ -1,5 +1,7 @@
 <launch>
+    <arg name="iss" default="false"/>
 	<include file="$(find r2_gazebo)/launch/r2_fullbody_gazebo_no_gui.launch">
 		 <arg name="moveit" value="true"/>
+		 <arg name="world"  value="r2_ISS_simple" if="$(arg iss)" />
 	</include>
 </launch>
