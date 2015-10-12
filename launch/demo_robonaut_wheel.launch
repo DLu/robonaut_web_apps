@@ -1,5 +1,6 @@
 <launch>
 	<include file="$(find robonaut_web_apps)/launch/webcore.launch"/>
 	<include file="$(find robonaut_web_apps)/launch/at.launch"/>
+	<include file="$(find robonaut_web_apps)/launch/interaction.launch"/>
 	<include file="$(find nasa_valves)/launch/valve_for_r2.launch"/>
 </launch>
