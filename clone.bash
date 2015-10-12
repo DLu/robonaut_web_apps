@@ -1,3 +1,6 @@
+wget https://gist.githubusercontent.com/DLu/9d4c03e8d402a12af0b7/raw/1001c258178c90e3b3f8860c69f645a506feac10/basic_ros_install.sh
+bash basic_ros_install.sh
+rm basic_ros_install.sh
 cd ~/Catkin/src/
 git clone -b develop        git@bitbucket.org:traclabs/affordance_templates.git
 git clone -b indigo         git@bitbucket.org:nasa_ros_pkg/nasa_r2_common.git
@@ -7,7 +10,7 @@ git clone -b traclabs-devel git@bitbucket.org:traclabs/robot_interaction_tools.g
 git clone                   git@github.com:DLu/nasa_valves.git
 git clone                   git@github.com:DLu/affordance_template_js.git
 git clone                   git@github.com:DLu/robonaut_web_apps.git
-sudo apt-get -y install ros-indigo-gazebo-* ros-indigo-control-msgs ros-indigo-joint-state-controller ros-indigo-effort-controllers ros-indigo-joint-trajectory-controller ros-indigo-moveit-* apache2
+sudo apt-get -y install ros-indigo-gazebo-* ros-indigo-control-msgs ros-indigo-joint-state-controller ros-indigo-effort-controllers ros-indigo-joint-trajectory-controller ros-indigo-moveit-* ros-indigo-tf2-web-republisher ros-indigo-interactive-marker-proxy apache2
 rosdep -y -r install affordance_templates robot_interaction_tools nasa_r2_common nasa_r2_simulator navigation_planner affordance_template_js
 cd affordance_templates
 ./config.sh catkin
