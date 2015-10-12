@@ -1,0 +1,5 @@
+<launch>
+  <!-- load taskboard -->
+  <param name="taskboard_description" command="$(find xacro)/xacro.py '$(find r2_gazebo)/urdf/taskboard.lower.xacro'" />
+  <node name="spawn_taskboard" pkg="gazebo_ros" type="spawn_model" args="-urdf -param taskboard_description -model taskboard -x 0.25 -y 0.7 -z 0.45" respawn="false" output="screen" />
+</launch>
