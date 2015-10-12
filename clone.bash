@@ -9,7 +9,9 @@ git clone                   git@github.com:DLu/affordance_template_js.git
 git clone                   git@github.com:DLu/robonaut_web_apps.git
 sudo apt-get -y install ros-indigo-gazebo-* ros-indigo-control-msgs ros-indigo-joint-state-controller ros-indigo-effort-controllers ros-indigo-joint-trajectory-controller ros-indigo-moveit-* apache2
 rosdep -y -r install affordance_templates robot_interaction_tools nasa_r2_common nasa_r2_simulator navigation_planner affordance_template_js
-cd ..
+cd affordance_templates
+./config.sh catkin
+cd ../..
 until catkin_make; do echo "TRY AGAIN"; done
 cd
 mkdir public_html
