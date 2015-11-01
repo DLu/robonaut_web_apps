@@ -45,7 +45,7 @@ After launching Gazebo, launch
 
     roslaunch robonaut_web_apps demo_robonaut.launch
     
-Then navigate in a browser to `URL_OF_HOST/r2_teleop.html`. 
+Then navigate in a browser to `URL_OF_HOST/r2.html`. 
 
 
 ### Robonaut Affordance Templates
