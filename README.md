@@ -61,5 +61,5 @@ Then navigate in a browser to `URL_OF_HOST/r2_at.html`.
 If you'd like to visualize a bag with PointCloud2 data in it, you need to launch
 
     roslaunch robonaut_web_apps pc.launch bag:=/path/to/pointcloud.bag topic:=/camera/depth_registered/points frame:=/camera_rgb_optical_frame
-    
-Then navigate in a browser to `URL_OF_HOST/pc.html`.
+
+where `topic` is the topic of the PointClou2 data and `frame` is the root frame of the data you'd like to display. Navigate in a browser to `URL_OF_HOST/pc.html`.
