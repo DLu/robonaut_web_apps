@@ -57,5 +57,9 @@ After launching Gazebo launch
 
 Then navigate in a browser to `URL_OF_HOST/r2_at.html`.
 
+### Point Cloud Bag Display
+If you'd like to visualize a bag with PointCloud2 data in it, you need to launch
 
-
+    roslaunch robonaut_web_apps pc.launch bag:=/path/to/pointcloud.bag topic:=/camera/depth_registered/points frame:=/camera_rgb_optical_frame
+    
+Then navigate in a browser to `URL_OF_HOST/pc.html`.
