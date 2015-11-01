@@ -32,3 +32,28 @@ where `URL_OF_HOST` is the public address of the server. This can be a URL such 
 
 ## Running the Web Apps
 
+For all demos that simulate the robonaut, the first step will be to launch 
+
+    roslaunch robonaut_web_apps gazebo.launch
+    
+If you want to have PointClouds appear, you will need to run this command with an X window. 
+
+Gazebo has finished loading when you see the "`All is well`" message.
+
+### Robonaut Teleop 
+After launching Gazebo, launch
+
+    roslaunch robonaut_web_apps demo_robonaut.launch
+    
+Then navigate in a browser to `URL_OF_HOST/r2_teleop.html`. 
+
+
+### Robonaut Affordance Templates
+After launching Gazebo launch
+
+    roslaunch robonaut_web_apps demo_robonaut_wheel.launch
+
+Then navigate in a browser to `URL_OF_HOST/r2_at.html`.
+
+
+
