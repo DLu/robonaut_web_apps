@@ -38,6 +38,8 @@ For all demos that simulate the robonaut, the first step will be to launch
     
 If you want to have PointClouds appear, you will need to run this command with an X window. 
 
+The default command listed above launches the robonaut in an empty environment. To add the taskboard, add `taskboard:=true`. To spawn the robot in the International Space Station, add `iss:=True`
+
 Gazebo has finished loading when you see the "`All is well`" message.
 
 ### Robonaut Teleop 
